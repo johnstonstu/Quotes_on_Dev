@@ -1,3 +1,53 @@
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'Exo';
+  src: url('../../assets/Exo-LightItalic.eot');
+  src: url('../../assets/Exo-LightItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../assets/Exo-LightItalic.woff2') format('woff2'),
+    url('../../assets/Exo-LightItalic.woff') format('woff'),
+    url('../../assets/Exo-LightItalic.ttf') format('truetype'),
+    url('../../assets/Exo-LightItalic.svg#Exo-LightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Exo';
+  src: url('../../assets/Exo-Medium.eot');
+  src: url('../../assets/Exo-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../../assets/Exo-Medium.woff2') format('woff2'),
+    url('../../assets/Exo-Medium.woff') format('woff'),
+    url('../../assets/Exo-Medium.ttf') format('truetype'),
+    url('../../assets/Exo-Medium.svg#Exo-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Exo';
+  src: url('../../assets/Exo-Light.eot');
+  src: url('../../assets/Exo-Light.eot?#iefix') format('embedded-opentype'),
+    url('../../assets/Exo-Light.woff2') format('woff2'),
+    url('../../assets/Exo-Light.woff') format('woff'),
+    url('../../assets/Exo-Light.ttf') format('truetype'),
+    url('../../assets/Exo-Light.svg#Exo-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Exo';
+  src: url('../../assets/Exo-MediumItalic.eot');
+  src: url('../../assets/Exo-MediumItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../assets/Exo-MediumItalic.woff2') format('woff2'),
+    url('../../assets/Exo-MediumItalic.woff') format('woff'),
+    url('../../assets/Exo-MediumItalic.ttf') format('truetype'),
+    url('../../assets/Exo-MediumItalic.svg#Exo-MediumItalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
