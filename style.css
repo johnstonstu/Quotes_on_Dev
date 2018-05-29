@@ -636,60 +636,68 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-.blog {
+body {
   background-color: #222222;
   color: #ffffff;
   font-weight: 300; }
-  .blog .container {
-    margin: 0 auto;
-    max-width: 1080px;
-    padding: 2.5%;
-    width: 100%; }
-    .blog .container .site-header {
-      margin-top: 3rem; }
-      .blog .container .site-header .logo img {
-        display: block;
-        width: 300px; }
-        @media only screen and (min-width: 620px) {
-          .blog .container .site-header .logo img {
-            width: 500px; } }
-        @media only screen and (min-width: 1080px) {
-          .blog .container .site-header .logo img {
-            margin: 0 auto;
-            width: 700px; } }
-    @media only screen and (min-width: 1080px) {
-      .blog .container .site-content {
-        margin: 4.5rem 175px 1.5rem;
-        position: relative; }
-        .blog .container .site-content:before, .blog .container .site-content:after {
-          color: #00cc00;
-          font-family: 'FontAwesome';
-          position: absolute;
-          top: 0;
-          font-size: 125px;
-          line-height: 125px; }
-        .blog .container .site-content:before {
-          left: -175px;
-          content: '\f10d'; }
-        .blog .container .site-content:after {
-          right: -175px;
-          content: '\f10e'; } }
-    .blog .container .site-content .entry-content {
-      margin-top: 3rem; }
-      .blog .container .site-content .entry-content p {
-        font-size: 1.25rem; }
-        @media only screen and (min-width: 620px) {
-          .blog .container .site-content .entry-content p {
-            font-size: 1.5rem; } }
-        @media only screen and (min-width: 1080px) {
-          .blog .container .site-content .entry-content p {
-            font-size: 2.5rem; } }
-    .blog .container .site-content .entry-meta {
-      margin-bottom: 3rem; }
-      .blog .container .site-content .entry-meta .entry-title {
-        display: inline;
-        font-size: 1.25rem;
-        font-weight: 400; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 2.5%;
+  width: 100%; }
+  .container .site-header {
+    margin-top: 3rem; }
+    .container .site-header .logo img {
+      display: block;
+      width: 300px; }
+      @media only screen and (min-width: 620px) {
+        .container .site-header .logo img {
+          width: 500px; } }
+      @media only screen and (min-width: 1080px) {
+        .container .site-header .logo img {
+          margin: 0 auto;
+          width: 700px; } }
+  @media only screen and (min-width: 1080px) {
+    .container .site-content {
+      margin: 4.5rem 175px 1.5rem;
+      position: relative; }
+      .container .site-content:before, .container .site-content:after {
+        color: #00cc00;
+        font-family: 'FontAwesome';
+        position: absolute;
+        top: 0;
+        font-size: 125px;
+        line-height: 125px; }
+      .container .site-content:before {
+        left: -175px;
+        content: '\f10d'; }
+      .container .site-content:after {
+        right: -175px;
+        content: '\f10e'; } }
+  .container .site-content .entry-content {
+    margin-top: 3rem; }
+    .container .site-content .entry-content p {
+      font-size: 1.25rem; }
+      @media only screen and (min-width: 620px) {
+        .container .site-content .entry-content p {
+          font-size: 1.5rem; } }
+      @media only screen and (min-width: 1080px) {
+        .container .site-content .entry-content p {
+          font-size: 2.5rem; } }
+  .container .site-content .entry-meta {
+    margin-bottom: 3rem; }
+    .container .site-content .entry-meta .entry-title {
+      display: inline;
+      font-size: 1.25rem;
+      font-weight: 400; }
+
+.page .container .entry-header h1 {
+  font-size: 2rem; }
+
+.page .container .entry-content p {
+  font-size: 1rem;
+  font-weight: 500; }
 
 .site-footer {
   margin: 60px 0;

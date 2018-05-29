@@ -2,77 +2,95 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-.blog {
+//main page
+body {
   background-color: $color_bg;
   color: $base_font_color;
   font-weight: 300;
-  .container {
-    margin: 0 auto;
-    max-width: 1080px;
-    padding: 2.5%;
-    width: 100%;
-    .site-header {
-      margin-top: 3rem;
-      .logo {
-        img {
-          display: block;
-          width: 300px;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 2.5%;
+  width: 100%;
+  .site-header {
+    margin-top: 3rem;
+    .logo {
+      img {
+        display: block;
+        width: 300px;
 
-          @include tablet {
-            width: 500px;
-          }
-          @include desktop {
-            margin: 0 auto;
-            width: 700px;
-          }
+        @include tablet {
+          width: 500px;
+        }
+        @include desktop {
+          margin: 0 auto;
+          width: 700px;
         }
       }
     }
-    .site-content {
-      @include desktop {
-        margin: 4.5rem 175px 1.5rem;
-        position: relative;
+  }
+  .site-content {
+    @include desktop {
+      margin: 4.5rem 175px 1.5rem;
+      position: relative;
 
-        &:before,
-        &:after {
-          color: $color_green;
-          font-family: 'FontAwesome';
-          position: absolute;
-          top: 0;
-          font-size: 125px;
-          line-height: 125px;
+      &:before,
+      &:after {
+        color: $color_green;
+        font-family: 'FontAwesome';
+        position: absolute;
+        top: 0;
+        font-size: 125px;
+        line-height: 125px;
+      }
+
+      &:before {
+        left: -175px;
+        content: '\f10d';
+      }
+
+      &:after {
+        right: -175px;
+        content: '\f10e';
+      }
+    }
+    .entry-content {
+      margin-top: 3rem;
+      p {
+        font-size: 1.25rem;
+
+        @include tablet {
+          font-size: 1.5rem;
         }
-
-        &:before {
-          left: -175px;
-          content: '\f10d';
-        }
-
-        &:after {
-          right: -175px;
-          content: '\f10e';
+        @include desktop {
+          font-size: 2.5rem;
         }
       }
-      .entry-content {
-        margin-top: 3rem;
-        p {
-          font-size: 1.25rem;
-
-          @include tablet {
-            font-size: 1.5rem;
-          }
-          @include desktop {
-            font-size: 2.5rem;
-          }
-        }
+    }
+    .entry-meta {
+      margin-bottom: 3rem;
+      .entry-title {
+        display: inline;
+        font-size: 1.25rem;
+        font-weight: 400;
       }
-      .entry-meta {
-        margin-bottom: 3rem;
-        .entry-title {
-          display: inline;
-          font-size: 1.25rem;
-          font-weight: 400;
-        }
+    }
+  }
+}
+
+// aboout page
+.page {
+  .container {
+    .entry-header {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+    .entry-content {
+      p {
+        font-size: 1rem;
+        font-weight: 500;
       }
     }
   }
