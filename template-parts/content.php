@@ -8,6 +8,8 @@
 /**
  * CMB2 Fields
  */
+
+ // gets post meta dom db, from post id, 'field from db', bool = single or multiple
 $source     = get_post_meta( get_the_ID(), '_qod_quote_source', true );
 $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true );
 ?>
@@ -24,7 +26,7 @@ $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true );
 		 * CMB2 Fields
 		 */
 		if ( $source && $source_url ) : ?>
-            <span class="source">, <a href="<?php echo $source_url; ?>"><?php echo $source; ?></a></span>
+            <span class="source">, <a class="source-url" href="<?php echo $source_url; ?>"><?php echo $source; ?></a></span>
 		<?php elseif ( $source ) : ?>
             <span class="source">, <?php echo $source; ?></span>
 		<?php else : ?>
