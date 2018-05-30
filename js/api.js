@@ -38,6 +38,17 @@
               data[0]._qod_quote_source +
               '</a>'
           );
+        } else if (data[0]._qod_quote_source.length > 0) {
+          $('.entry-content').empty();
+          $('.entry-content').append(data[0].content['rendered']);
+
+          $('.entry-title').empty();
+          $('.entry-title').append(data[0].title['rendered']);
+
+          $('.source').empty();
+          $('.source').append(
+            ', ' + '<p>' + data[0]._qod_quote_source + '</p>'
+          );
         } else {
           $('.source').empty();
           $('.entry-content').empty();
@@ -66,4 +77,37 @@
    *
    * api_vars.nonce
    */
+  $('#quote-submission-form').on('submit', function(e) {
+    e.preventDefault();
+    var author = $('#quote-author').val();
+    var quote = $('#quote-content').val();
+    var quoteSrc = $('#quote-source').val();
+    var quoteUrl = $('#quote-source-url').val();
+    console.log('auth: ' + author);
+    console.log('quote: ' + quote);
+    console.log('src: ' + quoteSrc);
+    console.log('quoteURL: ' + quoteUrl);
+
+    // $.ajax({
+    //   method: 'post',
+    //   url: api_vars.root_url + 'wp/v2/posts/' + api_vars.post_id,
+    //   data: {
+    //     comment_status: 'closed'
+    // title: author
+    // content: quote
+    // _qod_quote_source: quoteSrc
+    // _qod_quote_source_url: quoteUrl
+    //   },
+    //   beforeSend: function(xhr) {
+    //     xhr.setRequestHeader('X-WP-Nonce', api_vars.nonce);
+    //   }
+    // }).done(function(response) {
+    //   alert('Success! Comments are closed for this post.');
+    // });
+
+    $('#quote-author').val('');
+    $('#quote-content').val('');
+    $('#quote-source').val('');
+    $('#quote-source-url').val('');
+  });
 })(jQuery);

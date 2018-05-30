@@ -75,6 +75,13 @@ body {
         font-size: 1.25rem;
         font-weight: 400;
       }
+      .source {
+        p {
+          font-size: 1.25rem;
+          font-style: italic;
+          display: inline-block;
+        }
+      }
     }
   }
 }

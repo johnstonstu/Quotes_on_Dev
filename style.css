@@ -691,6 +691,10 @@ body {
       display: inline;
       font-size: 1.25rem;
       font-weight: 400; }
+    .container .site-content .entry-meta .source p {
+      font-size: 1.25rem;
+      font-style: italic;
+      display: inline-block; }
 
 .page .container .entry-header h1 {
   font-size: 2rem; }
