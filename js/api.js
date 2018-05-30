@@ -75,39 +75,41 @@
    *
    * post request ajax
    *
-   * api_vars.nonce
+   * 
    */
+
+   // post data from submit a quote
   $('#quote-submission-form').on('submit', function(e) {
     e.preventDefault();
+
+    // assign data values from form to vars
     var author = $('#quote-author').val();
     var quote = $('#quote-content').val();
     var quoteSrc = $('#quote-source').val();
     var quoteUrl = $('#quote-source-url').val();
-    console.log('auth: ' + author);
-    console.log('quote: ' + quote);
-    console.log('src: ' + quoteSrc);
-    console.log('quoteURL: ' + quoteUrl);
 
-    // $.ajax({
-    //   method: 'post',
-    //   url: api_vars.root_url + 'wp/v2/posts/' + api_vars.post_id,
-    //   data: {
-    //     comment_status: 'closed'
-    // title: author
-    // content: quote
-    // _qod_quote_source: quoteSrc
-    // _qod_quote_source_url: quoteUrl
-    //   },
-    //   beforeSend: function(xhr) {
-    //     xhr.setRequestHeader('X-WP-Nonce', api_vars.nonce);
-    //   }
-    // }).done(function(response) {
-    //   alert('Success! Comments are closed for this post.');
-    // });
+    $.ajax({
+      method: 'post',
+      url: api_vars.root_url + 'wp/v2/posts/',
+      data: {
+        title: author,
+        content: quote,
+        _qod_quote_source: quoteSrc,
+        _qod_quote_source_url: quoteUrl,
+        post_status: 'publish'
+      },
+      beforeSend: function(xhr) {
+        xhr.setRequestHeader('X-WP-Nonce', api_vars.nonce);
+      }
+    }).done(function(response) {
+      alert('Success!');
+    });
 
+    // clear and hide form
     $('#quote-author').val('');
     $('#quote-content').val('');
     $('#quote-source').val('');
     $('#quote-source-url').val('');
+    $('.quote-submission').slideUp();
   });
 })(jQuery);

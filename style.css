@@ -663,7 +663,7 @@ body {
       margin: 4.5rem 175px 1.5rem;
       position: relative; }
       .container .site-content:before, .container .site-content:after {
-        color: #00cc00;
+        color: #ff860e;
         font-family: 'FontAwesome';
         position: absolute;
         top: 0;
