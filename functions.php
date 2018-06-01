@@ -78,7 +78,7 @@ function qod_scripts() {
 			'root_url' => esc_url_raw(rest_url()),
 			'home_url' => esc_url_raw(home_url()),
 			'nonce' => wp_create_nonce( 'wp_rest' ),
-			'success' => 'Great Success!',
+			'success' => 'The Don approves.',
 			'failure' => 'Fail, Sorry!'
 		));
 	}

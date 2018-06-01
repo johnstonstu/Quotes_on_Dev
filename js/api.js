@@ -75,10 +75,10 @@
    *
    * post request ajax
    *
-   * 
+   *
    */
 
-   // post data from submit a quote
+  // post data from submit a quote
   $('#quote-submission-form').on('submit', function(e) {
     e.preventDefault();
 
@@ -95,14 +95,13 @@
         title: author,
         content: quote,
         _qod_quote_source: quoteSrc,
-        _qod_quote_source_url: quoteUrl,
-        post_status: 'publish'
+        _qod_quote_source_url: quoteUrl
       },
       beforeSend: function(xhr) {
         xhr.setRequestHeader('X-WP-Nonce', api_vars.nonce);
       }
     }).done(function(response) {
-      alert('Success!');
+      $('.entry-title').after('<p>' + api_vars.success + '</p>');
     });
 
     // clear and hide form
@@ -110,6 +109,6 @@
     $('#quote-content').val('');
     $('#quote-source').val('');
     $('#quote-source-url').val('');
-    $('.quote-submission').slideUp();
+    $('#quote-submission-form').slideUp();
   });
 })(jQuery);
