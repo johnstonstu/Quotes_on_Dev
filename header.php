@@ -13,6 +13,7 @@
 		 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 		 <link rel="profile" href="http://gmpg.org/xfn/11">
 		 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+		 <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.ico" />
 
 	 <?php wp_head(); ?>
 	 </head>
@@ -26,7 +27,7 @@
 					 <div class="logo">
 						 <h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 						 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-							 <img src="<?php echo get_template_directory_uri() . '/images/qodon-logo.svg'?>" class="logo" alt="Quotes on Dev logo" />
+							 <img src="<?php echo get_template_directory_uri() . '/images/qodon-trumpface-03.svg'?>" class="logo" alt="Quotes on Dev logo" />
 						 </a>
 					 </div>
 				 </div><!-- .site-branding -->

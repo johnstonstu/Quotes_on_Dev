@@ -102,3 +102,44 @@ body {
     }
   }
 }
+
+#quote-submission-form {
+  label {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  input,
+  textarea {
+    background: $color_bg;
+    border: 2px solid $color_green;
+    margin-bottom: 2rem;
+    &:hover,
+    &:focus {
+      border-color: white;
+      outline: 0;
+    }
+  }
+}
+
+.browse-archives {
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 2;
+    margin-left: 0;
+    padding-left: 0;
+    li {
+      margin-right: 1rem;
+      @include tablet {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+.tag-cloud-link {
+  @include tablet {
+    font-size: 1.25rem !important;
+  }
+}

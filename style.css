@@ -386,9 +386,9 @@ input[type='button'],
 input[type='reset'],
 input[type='submit'] {
   background-color: #222;
-  border: 2px solid #0c0;
+  border: 2px solid #ff860e;
   border-radius: 3px;
-  color: #0c0;
+  color: #ff860e;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1;
@@ -403,8 +403,8 @@ input[type='submit'] {
   input[type='button']:hover,
   input[type='reset']:hover,
   input[type='submit']:hover {
-    color: #07871e;
-    border-color: #07871e; }
+    color: #a75300;
+    border-color: #a75300; }
   button:active, button:focus,
   input[type='button']:active,
   input[type='button']:focus,
@@ -412,8 +412,8 @@ input[type='submit'] {
   input[type='reset']:focus,
   input[type='submit']:active,
   input[type='submit']:focus {
-    color: #07871e;
-    border-color: #07871e; }
+    color: #a75300;
+    border-color: #a75300; }
 
 #new-quote-button {
   display: block; }
@@ -455,12 +455,12 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: #00cc00;
+  color: #ff860e;
   text-decoration: none; }
   a:visited {
-    color: #00cc00; }
+    color: #ff860e; }
   a:hover, a:focus, a:active {
-    color: #07871e; }
+    color: #a75300; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -702,6 +702,41 @@ body {
 .page .container .entry-content p {
   font-size: 1rem;
   font-weight: 500; }
+
+#quote-submission-form label {
+  display: block;
+  margin-bottom: 1rem; }
+
+#quote-submission-form input,
+#quote-submission-form textarea {
+  background: #222222;
+  border: 2px solid #ff860e;
+  margin-bottom: 2rem; }
+  #quote-submission-form input:hover, #quote-submission-form input:focus,
+  #quote-submission-form textarea:hover,
+  #quote-submission-form textarea:focus {
+    border-color: white;
+    outline: 0; }
+
+.browse-archives ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  line-height: 2;
+  margin-left: 0;
+  padding-left: 0; }
+  .browse-archives ul li {
+    margin-right: 1rem; }
+    @media only screen and (min-width: 620px) {
+      .browse-archives ul li {
+        font-size: 1.25rem; } }
+
+@media only screen and (min-width: 620px) {
+  .tag-cloud-link {
+    font-size: 1.25rem !important; } }
 
 .site-footer {
   margin: 60px 0;

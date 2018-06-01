@@ -23,9 +23,11 @@ $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__border-abbr: #666;
 
-$color__link: #00cc00;
-$color__link-visited: #07871e;
-$color__link-hover: #07871e;
+$color__link: $color_green;
+$color__link-visited: darken($color_green, 20%);
+$color__link-hover: $color__link-visited;
+
+$color__green_old: #00cc00;
 
 // Typography
 

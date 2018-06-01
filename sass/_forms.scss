@@ -9,9 +9,9 @@ input[type='button'],
 input[type='reset'],
 input[type='submit'] {
   background-color: #222;
-  border: 2px solid #0c0;
+  border: 2px solid $color_green;
   border-radius: 3px;
-  color: #0c0;
+  color: $color_green;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1;
