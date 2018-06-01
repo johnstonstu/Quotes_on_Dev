@@ -1,6 +1,6 @@
 <?php
 /**
- * Quotes on Dev Starter Theme functions and definitions.
+ * Quotes on don Starter Theme functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
@@ -106,3 +106,13 @@ require get_template_directory() . '/inc/metaboxes.php';
  */
  require get_template_directory() . '/inc/api.php';
  
+
+ function qod_excerpt_len( $length ) {
+	return 10;
+}
+add_filter( 'excerpt_length', 'qod_excerpt_len', 999 );
+
+function qod_modify_read_more_link() {
+    return ' [Read More...] ';
+}
+add_filter( 'excerpt_more', 'qod_modify_read_more_link' );

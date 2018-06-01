@@ -1,9 +1,9 @@
 /*!
-Theme Name: Quotes on Dev Starter Theme
+Theme Name: Quotes on don Starter Theme
 Theme URI: http://underscores.me/
 Author: RED Academy
 Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+Description: A WordPress starter theme for the Quotes on don project, forked from Underscores.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,7 +12,7 @@ Tags:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-Quotes on Dev Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Quotes on don Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -404,7 +404,8 @@ input[type='submit'] {
   input[type='reset']:hover,
   input[type='submit']:hover {
     color: #a75300;
-    border-color: #a75300; }
+    border-color: #a75300;
+    outline: 0; }
   button:active, button:focus,
   input[type='button']:active,
   input[type='button']:focus,
@@ -413,6 +414,7 @@ input[type='submit'] {
   input[type='submit']:active,
   input[type='submit']:focus {
     color: #a75300;
+    outline: 0;
     border-color: #a75300; }
 
 #new-quote-button {
@@ -437,7 +439,7 @@ textarea {
   input[type='password']:focus,
   input[type='search']:focus,
   textarea:focus {
-    color: #111; }
+    color: white; }
 
 input[type='text'],
 input[type='email'],
@@ -695,6 +697,8 @@ body {
       font-size: 1.25rem;
       font-style: italic;
       display: inline-block; }
+    .container .site-content .entry-meta .source a {
+      font-size: 1.25rem; }
 
 .page .container .entry-header h1 {
   font-size: 2rem; }
@@ -737,6 +741,34 @@ body {
 @media only screen and (min-width: 620px) {
   .tag-cloud-link {
     font-size: 1.25rem !important; } }
+
+.error-404 .search-field {
+  color: white;
+  background: #222222;
+  width: 240px;
+  border: 2px solid #ff860e; }
+  @media only screen and (min-width: 620px) {
+    .error-404 .search-field {
+      font-size: 1.25rem; } }
+  .error-404 .search-field:focus {
+    color: white;
+    border-color: white; }
+
+.error-404 .clearfix {
+  border: none;
+  margin-bottom: 6rem; }
+
+.error-404 .search-submit {
+  border: none;
+  padding-left: 1rem; }
+
+.search-results .page-title {
+  border-bottom: 1px dotted #fff;
+  margin-top: 3rem;
+  padding-bottom: 1.5rem; }
+
+.archive .hentry {
+  border-bottom: 1px dotted #fff; }
 
 .site-footer {
   margin: 60px 0;

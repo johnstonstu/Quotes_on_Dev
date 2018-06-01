@@ -16,13 +16,13 @@ get_header(); ?>
          	</header><!-- .entry-header -->
 
             <div class="post-archives clearfix">
-               <h2>Quote Authors</h2>
+               <h2>Quote Snippits</h2>
                <ul>
                <?php
                   $posts = get_posts( 'posts_per_page=-1' );
                   foreach( $posts as $post ) : setup_postdata( $post );
                ?>
-                  <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                  <li><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></li>
                <?php endforeach; wp_reset_postdata(); ?>
                </ul>
             </div>

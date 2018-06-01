@@ -20,7 +20,7 @@
 						 	) 
 						); 
 					?>
-					<p>Brought to you by <a href="http://www.redacademy.com/">RED Academy</a></p>	
+					<p>Brought to you by <a href="https://www.linkedin.com/in/stuart-johnston-83b667161/">Johnstonstu</a></p>	
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

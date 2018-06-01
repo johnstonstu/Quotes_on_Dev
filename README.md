@@ -1,6 +1,6 @@
-# Quotes on Dev Starter
+# Quotes on don Starter
 
-A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+A WordPress starter theme for the Quotes on don project, forked from Underscores.
 
 ## Installation
 
