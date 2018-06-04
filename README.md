@@ -4,7 +4,7 @@ A page that displays a random quote by donald trump.
 
 By: Stuart Johnston
 
-![Alt text](./images/Screen Shot 2018-06-04 at 8.55.07 AM.png "Quotes on Don")
+![alt text](./images/Screen Shot 2018-06-04 at 8.55.07 AM.png "Quotes on Don")
 
 ## Technologies used
 
