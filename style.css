@@ -770,6 +770,9 @@ body {
 .archive .hentry {
   border-bottom: 1px dotted #fff; }
 
+.post-archives p {
+  font-size: 1rem; }
+
 .site-footer {
   margin: 60px 0;
   line-height: 2.5; }
