@@ -1,23 +1,27 @@
-# Quotes on don Starter
+# Quotes on don
 
-A WordPress starter theme for the Quotes on don project, forked from Underscores.
+A page that displays a random quote by donald trump.
 
-## Installation
+By: Stuart Johnston
 
-### 1. Download me (don't clone me!)
+![Alt text](./images/Screen Shot 2018-06-04 at 8.55.07 AM.png "Quotes on Don")
 
-Then add me to your `wp-content/themes` directory.
+## Technologies used
 
-### 2. Rename the `quotesondev-starter-master` directory
+* Wordpress (WP)
+* Html / sass
+* JS / jQuery
+* Gulp / npm
+* MAMP
 
-Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
+## Lessons Learned
 
-### 3. Install the dev dependencies
+* WP api
+* GET / POST to WP databse
+* Importing xml data
 
-Next you'll need to run `npm install` **inside your theme directory** to install the npm packages you'll need for Gulp, etc.
+## Challanges
 
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
-
-And now would be a good time to `git init` :)
+* User permissions (client id / nonce)
+* Copyright / licensing
+* Online hosting
